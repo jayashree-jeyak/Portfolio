@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>Portfolio.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Hello, It's Me</h2>
+                <h1>JAYASHREE J</h1>
+                <h2>And I'm a passionate <span id="typed-text"></span></h2>
+                <p>I'm a web designer with extensive experience in creating modern, responsive websites.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <a href="#about" class="btn">More About Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile2.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var typed = new Typed("#typed-text", {
+            strings: ["Web Developer", "UI/UX Designer", "Cloud computing Engineer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+    
+</body>
+</html>
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Jayashree, an aspiring  CLOUD COMPUTING ENGINEER with a passion for Cyber Security Analysis and Data Analysis. 
+               I love solving problems, learning new technologies, and building meaningful projects.</p>
+            
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>AWS</li>
+                <li>JAVA</li>
+                <li>SQL</li>
+                <li>EXCEL</li>
+            </ul>
+
+            <a href="files/resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+
+        <div class="about-image">
+            <img src="images/coat.jpg" alt="About Me">
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                
+                <h3>College Placement System</h3>
+                <p>Developed a Django-based campus placement automation platform with an admin dashboard, enhancing recruitment management, tracking, and workflow efficiency.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                
+                <h3>ETSR: Energy-Aware Trust-Based Secure Routing for WSN</h3>
+                <p>Designed and implemented a secure, energy-efficient routing protocol for WSNs using encryption and trust-based mechanisms, validated via NS2 simulations.</p>
+                <a href="images/proj1.jpg", href="images/proj11.jpg" class="btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                
+                <h3>AI/ML-Based Deepfake Detection</h3>
+                <p>Developed a CNN-based deepfake detection system with trust-based mechanisms, optimizing accuracy and energy efficiency, validated using FaceForensics++ data</p>
+                <a href="images/proj2" class="btn">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to connect, feel free to send me a message!</p>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jayashreejeyakumarr0509/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jayashree-jeyak" target="_blank">GitHub</a>
+            <a href="mailto:jayashreejeyak@gmail.com">Email </a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <p>© 2024 JAYASHREE J. All Rights Reserved.</p>
+    <p>Designed & Built by JAYASHREE ❤️</p>
+</footer>
